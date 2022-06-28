@@ -29,6 +29,14 @@ public class Card {
 
         Card card1 = new Card(Suit.DIAMONDS, Rank.JACK);
         Card card2 = new Card(Suit.SPADES, Rank.TEN);
+
+        System.out.println(card1);
+    }
+
+    @Override
+    public String toString(){
+        //JACK {Club symbol}
+        return this.rank.toString().concat(" ").concat(this.suit.toString());
     }
 
     public int getValue(){
